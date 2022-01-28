@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORD-COUNTER</title>
+    <link rel="stylesheet" href="{% static 'count/style.css' %}"> 
+    
+</head>
+<body>
+   
+        <h1> W<br> O <br>R<br>D<br><br>C<br>O<br>U<br>N<br>T<br>E<br>R<br></h1>
+   
+    <div class=container> 
+        <div class="counter">
+            <div class="CharactersCount">
+                <span> CHARACTERS</span>
+                <div id="cC"> 0 </div>
+            </div>
+            <div class="WordsCount">
+                <span>WORDS</span>
+                <div id="wC"> 0 </div>
+            </div>
+        </div>
+      <br>  <p> <i>     Enter your text below:</i></p> <br>
+    <textarea id="text" cols="50" rows="50"></textarea>
+    </div>
+    
+    <script src="{% static 'count/word.js' %}"></script>
+    
+</body>
+</html>
